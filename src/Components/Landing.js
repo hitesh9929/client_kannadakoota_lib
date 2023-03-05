@@ -22,7 +22,7 @@ export default function Landing() {
     <h1 className="mt-5" id='grad-css'>ಓದು ಗೂಡು</h1>
    </div>
    </div>
-   <div className="buttons container mt-5 text-center pb-5 d-grid gap-1 col-4 p-4 mx-aut0 ">
+   <div className="buttons container mt-5 text-center pb-5  ">
     <Link className="btn btn-info p-2 m-2 btn-lg" to="/QrScanner">Hire a Book</Link> 
     <Link className="btn btn-info p-2 m-2 btn-lg" to='/QrScanner'>Return  Book</Link>
    </div>
