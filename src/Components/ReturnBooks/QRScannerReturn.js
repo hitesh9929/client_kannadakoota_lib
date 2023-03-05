@@ -25,7 +25,7 @@ if(result){
   return (
     <>
     <section className="Scanner bg-dark">
-    <h1 >Scan QR code </h1>
+    
     {/* <input type="file" onChange={(e) => readCode(e)} /> */}
     <div className=" m-3">
        <QrReader
