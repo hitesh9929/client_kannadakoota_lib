@@ -8,38 +8,21 @@
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    background-color: #e7e2e2 !important;
+    background-color:#212529 !important;
     color: #fff !important;
     font-family: "Centra", sans-serif !important;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    padding: 0;
-    line-height: normal;
-  }
-  
-  p,
-  a,
-  li,
-  button,
-  ul {
-    margin: 0;
-    padding: 0;
-    line-height: normal;
-    text-decoration: none;
-  }
+
 
   /* ------ nav ------- */
 #title{
     margin-left: 35%;
 }
-
+#nav-bg
+{
+    background-color: rgb(219, 215, 215);
+}
 #nav_title  {
     font-size: 25px;
     font-weight: 600;
@@ -170,7 +153,7 @@ font-weight:600
       display: none;
     }
     #title{
-        margin-left: 0px;
+        margin-left: 32px;
     }
 
 }
