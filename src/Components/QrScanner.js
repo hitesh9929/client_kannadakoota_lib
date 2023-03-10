@@ -3,9 +3,11 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import QrReader from 'react-qr-reader';
+import Axios from 'axios';
+
 
 export default function QRScanner() {
-
+    const [mydata,setmydata]=useState([]);
     const [result,setResult] = useState("")
     const [showResult,setShowResult] = useState(false)
 const webError = (error)=>{
@@ -17,8 +19,15 @@ const webScan = (result) =>{
 if(result){
     
     alert("Successfuly Scanned! Go ahead and fill your details")
-    setShowResult(true)
+    setShowResult(true);
     setResult(result);
+    var url=`${process.env.REACT_APP_HOST}/lib/`+result;
+    console.log(url);
+    Axios.get(url)
+    .then(res=>{
+        setmydata(res.data);
+    }).catch(err=>alert(err))
+   
 }
 }
    
@@ -37,15 +46,28 @@ if(result){
        /> 
     </div>
 
-<div className="container text-light text-center">
-   { showResult ?( <h4 className='text-success'>Details: {result}</h4>) : (<h5>Please scan QR code to proceed further </h5> )}
 
+<div className='container text-center text-light'>
+    {mydata.map((post)=>{
+        const {name,genre,author}=post;
+        return(
+            <div>
+                <h4>{name}</h4>
+                <h4>{genre}</h4>
+                <h4>{author}</h4>
+            </div>
+        )
+    })}
 </div>
+
+
 <div className="container d-grid gap-1 col-4 p-4 mx-auto pb-5">
- { showResult ? ( <Link className='btn btn-info btn-lg' to="/hireBook">Next </Link>) : null}
+ { showResult ? ( <Link className='btn btn-info btn-lg' to={`/hireBook/?key=${result}`}>Next </Link>) : null}
 </div>
     </section>
     </>
   )
 }
 
+
+// axios.get(' ')

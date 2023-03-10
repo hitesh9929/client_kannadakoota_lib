@@ -6,7 +6,7 @@ export default function Navbar() {
    <>
    <nav className="navbar navbar-expand-lg  p-2" id='nav-bg'>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
     <img src={ClubLogo} alt="Bootstrap" width="40" height="40" className='img-fluid rounded-circle' /> <span id='nav_title'> ಕನ್ನಡ ಕೂಟ</span> 
     </a>
     <button

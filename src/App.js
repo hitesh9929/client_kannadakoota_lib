@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -16,7 +16,7 @@ function App() {
       <Navbar/>
       <Routes>
     <Route exact path="/" element={<Landing/>} ></Route>
-    <Route exact path="/QrScanner" element={<QRScanner/>} ></Route>
+    <Route exact path="/QrScannerHire" element={<QRScanner/>} ></Route>
     <Route exact path="/hireBook" element={<HireBooks/>} ></Route>
     <Route exact path="/QrScannerReturn" element={<QRScannerReturn/>} ></Route>
     <Route exact path="/returnBook" element={<ReturnBook/>} ></Route>

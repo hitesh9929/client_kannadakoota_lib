@@ -25,22 +25,22 @@ export default function Footer() {
         {" "}
         <ul className="social-icons">
           <li>
-            <a className="instagram" href="">
+            <a className="instagram" href="/">
               <i className="fa fa-instagram" />
             </a>
           </li>
           <li>
-            <a className="twitter" href="#">
+            <a className="twitter" href="/">
               <i className="fa fa-twitter" />
             </a>
           </li>
           <li>
-            <a className="dribbble" href="#">
+            <a className="dribbble" href="/">
               <i className="fa fa-dribbble" />
             </a>
           </li>
           <li>
-            <a className="linkedin" href="#">
+            <a className="linkedin" href="/">
               <i className="fa fa-linkedin" />
             </a>
           </li>
