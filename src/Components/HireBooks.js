@@ -58,9 +58,9 @@ export default function HireBooks() {
     }
     if(loading){
       return (<>
-        <div className="loader">
+        {/* <div className="loader">
             <img src="loader.gif" alt="Loading..."></img>
-        </div>
+        </div> */}
   
       </>)
     } 
@@ -73,15 +73,15 @@ export default function HireBooks() {
     <div className="container  text-center p-5">
 
         
-        <input type="text" className="form-control m-2 " placeholder='Enter your Name' id="name" value={name} onChange={handleNameChange} />
+        <input type="text" required className="form-control m-2 " placeholder='Enter your Name' id="name" value={name} onChange={handleNameChange} />
       <br />
     
        
-        <input type="email" className="form-control m-2" id="email" placeholder='Enter your email id' value={email} onChange={handleEmailChange} />
+        <input type="email" required className="form-control m-2" id="email" placeholder='Enter your email id' value={email} onChange={handleEmailChange} />
        <br />
     
        
-        <input type="tel" className="form-control m-2" id="phone" placeholder='Enter your Phone number' value={phoneNumber} onChange={handlePhoneNumberChange} />
+        <input type="tel" required className="form-control m-2" id="phone" placeholder='Enter your Phone number' value={phoneNumber} onChange={handlePhoneNumberChange} />
       
     
    </div>

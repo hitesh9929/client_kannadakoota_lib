@@ -21,7 +21,7 @@ const webError = (error)=>{
 const webScan = (result) =>{
 if(result){
     
-    alert("Successfuly Scanned! Go ahead and fill your details")
+    alert("Successfuly Scanned!! ")
     setShowResult(true)
     setResult(result);
     const url=`${process.env.REACT_APP_HOST}/lib/`+result
@@ -60,9 +60,9 @@ const handlesubmit =()=>{
 }
   if(loading){
     return (<>
-      <div class="loader">
+      {/* <div class="loader">
           <img src="loader.gif" alt="Loading..."></img>
-      </div>
+      </div> */}
 
     </>)
   } 

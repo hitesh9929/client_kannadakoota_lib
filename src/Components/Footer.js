@@ -25,7 +25,7 @@ export default function Footer() {
         {" "}
         <ul className="social-icons">
           <li>
-            <a className="instagram" href="/">
+            <a className="instagram" href="https://www.instagram.com/kannadakoota_pesu/">
               <i className="fa fa-instagram" />
             </a>
           </li>
@@ -34,13 +34,15 @@ export default function Footer() {
               <i className="fa fa-twitter" />
             </a>
           </li>
+          
           <li>
-            <a className="dribbble" href="/">
-              <i className="fa fa-dribbble" />
+            <a className="youtube" href="https://www.youtube.com/@KannadaKoota">
+              <i className="fa fa-youtube" />
             </a>
           </li>
+
           <li>
-            <a className="linkedin" href="/">
+            <a className="linkedin" href="https://www.linkedin.com/in/kannada-koota-pesu-313013265/">
               <i className="fa fa-linkedin" />
             </a>
           </li>

@@ -23,7 +23,7 @@ export default function Landing() {
    </div>
    </div>
    <div className="buttons container mt-5 text-center pb-5  ">
-    <Link className="btn btn-info p-2 m-2 btn-lg" to="/QrScannerHire">Hire a Book</Link> 
+    <Link className="btn btn-info p-2 m-2 btn-lg" to="/QrScannerHire">Borrow a Book</Link> 
     <Link className="btn btn-info p-2 m-2 btn-lg" to='/QrScannerReturn'>Return  Book</Link>
    </div>
    
