@@ -13,6 +13,7 @@ export default function QRScanner() {
 const webError = (error)=>{
     if(error){
         console.log(error);
+        alert(error);
     }
 }
 const webScan = (result) =>{

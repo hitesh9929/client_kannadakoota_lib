@@ -73,7 +73,7 @@ export default function HireBooks() {
     <div className="container  text-center p-5">
 
         
-        <input type="text" required className="form-control m-2 " placeholder='Enter your Name' id="name" value={name} onChange={handleNameChange} />
+        <input type="text"  className="form-control m-2 " placeholder='Enter your Name' id="name" value={name} onChange={handleNameChange} required/>
       <br />
     
        
