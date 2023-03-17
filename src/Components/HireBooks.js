@@ -70,10 +70,11 @@ export default function HireBooks() {
     <Link className=' mt-1 btn btn-info text-light ' to="/"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-arrow-left-short" viewBox="0 0 16 16">
   <path fillRule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
 </svg>Back </Link>
+<form onSubmit={handleSubmit}>
     <div className="container  text-center p-5">
 
         
-        <input type="text"  className="form-control m-2 " placeholder='Enter your Name' id="name" value={name} onChange={handleNameChange} required/>
+        <input type="text" required className="form-control m-2 " placeholder='Enter your Name' id="name" value={name} onChange={handleNameChange} />
       <br />
     
        
@@ -86,8 +87,9 @@ export default function HireBooks() {
     
    </div>
 <div className="container d-grid gap-1 col-4 p-4 mx-auto">
-    <button className='btn btn-info btn-lg' onClick={handleSubmit}>Submit</button>
+    <button type="submit" className='btn btn-info btn-lg' >Submit</button>
 </div>
+</form>
 
    </section>
    </>
