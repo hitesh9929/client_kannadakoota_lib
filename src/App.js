@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Landing from './Components/Landing';
 import QRScanner from './Components/QrScanner';
+import './App.css';
 import HireBooks from './Components/HireBooks';
 import {Route,Routes}  from 'react-router-dom';
 import QRScannerReturn from './Components/ReturnBooks/QRScannerReturn';
