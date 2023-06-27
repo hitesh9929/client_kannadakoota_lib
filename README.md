@@ -1,1 +1,1 @@
-Hosted @ https://odu-goodu.netlify.app/
+Hosted @ https://kannadakoota.netlify.app/
